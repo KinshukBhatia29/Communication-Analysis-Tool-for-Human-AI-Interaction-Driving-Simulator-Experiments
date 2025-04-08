@@ -1,104 +1,118 @@
-# **Communication Analysis Tool for Human-AI Interaction Driving Simulator Experiments**
+# Communication Analysis Tool for Human-AI Interaction in Driving Simulator Experiments
 
-## **1. Overview**
-This project analyzes human-AI interaction in a driving simulator by processing audiovisual communication data. It involves:
-- **Speech-to-text transcription**
-- **Speaker diarization**
-- **Sentiment analysis**
-- **Visualization of conversation dynamics**
+## Overview
 
-The project consists of **two Jupyter Notebook files**:
-1. **`transcription_sentiment.ipynb`** – Extracts audio, transcribes speech, segments speakers, applies sentiment analysis, and saves results in a CSV file.
-2. **`visualization.ipynb`** – Reads the processed CSV and generates visualizations for speaker interaction and sentiment trends.
+This repository provides a complete pipeline for analyzing human-AI interaction in driving simulator experiments. It processes audiovisual data to extract insights using:
 
----
+- *Speech-to-Text Transcription*: Converts spoken dialogue from audio files into text.
+- *Speaker Diarization*: Identifies and labels different speakers.
+- *Sentiment Analysis*: Determines the emotional tone of speech segments.
+- *Named Entity Recognition (NER)*: Extracts relevant named entities from transcriptions.
+- *Visualization*: Generates various graphs to analyze conversation patterns.
 
-## **2. Requirements**
+## Prerequisites
 
-### **2.1 System Requirements**
-- OS: Windows 10+, macOS, Linux (Ubuntu recommended)
-- Python 3.8+
-- Minimum 8GB RAM (16GB+ recommended for large videos)
+### 1. Clone the Repository
 
-### **2.2 Required Python Libraries**
-To install dependencies, run:
-```bash
-pip install -r requirements.txt
-```
-#### **Dependencies**
-There are two `requirements.txt` files:
-- **For transcription & sentiment analysis (`requirements_transcription.txt`)**:
-  ```
-  ffmpeg-python
-  numpy
-  pandas
-  nltk
-  pyannote.audio
-  whisper
-  openai
-  ```
-- **For visualization (`requirements_visualization.txt`)**:
-  ```
-  matplotlib
-  seaborn
-  pandas
-  ```
-
-To install them separately:
-```bash
-pip install -r requirements_transcription.txt
-pip install -r requirements_visualization.txt
-```
-
----
-
-## **3. Installation & Setup**
-
-### **3.1 Installing Dependencies**
-Ensure `pip` is up-to-date and install the required libraries:
-```bash
-pip install --upgrade pip
-pip install -r requirements.txt
-```
-
-### **3.2 Hugging Face Authentication**
-Some models require authentication with a **Hugging Face token**.
-1. Visit: [https://huggingface.co/settings/tokens](https://huggingface.co/settings/tokens)
-2. Generate a **READ token**.
-3. Authenticate:
-```python
-from huggingface_hub import login
-login("YOUR_HUGGINGFACE_TOKEN")
-```
+bash
+git clone https://github.com/KinshukBhatia29/Communication-Analysis-Tool-for-Human-AI-Interaction-Driving-Simulator-Experiments.git
+cd Communication-Analysis-Tool-for-Human-AI-Interaction-Driving-Simulator-Experiments
 
 
-## **4. Testing & Validation**
+### 2. Install Dependencies
 
-### **4.1 Functional Testing**
-1. **Small Sample Test:** Run a short (1-min) test video and check if:
-   - The transcription is accurate.
-   - The timestamps match.
-   - The speaker diarization is correct.
-2. **Edge Cases:**
-   - Multiple overlapping speakers.
-   - Background noise interference.
-   - Short, unclear words.
+- For transcription, diarization, and sentiment analysis:
+  bash
+  pip install -r requirement_transcription.txt
+  
+- For visualization:
+  bash
+  pip install -r requirement_visualization.txt
+  
 
-### **4.2 Performance Testing**
-- Measure **processing time** for different video sizes.
-- Check **memory usage** during execution.
+### 3. Set Up Hugging Face API Token
+
+This project uses Hugging Face models. To authenticate:
+
+- Get your *Hugging Face API token* from [Hugging Face](https://huggingface.co/settings/tokens).
+- Set it in your environment:
+  bash
+  export HUGGING_FACE_HUB_TOKEN="your_token_here"
+  
+
+## Running the Transcription and Analysis Pipeline
+
+### 1. Set Input and Output Paths
+
+Modify the paths in updated-transcription.ipynb to specify:
+
+- *Input video file* (for audio extraction)
+
+Example:
+
+python
+input_video_path = "path/to/your/video/*.mp4"
 
 
----
+### 2. Execute updated-transcription.ipynb
 
-## **6. Conclusion**
-This tool provides **automated speech analysis** for driving simulations, offering **detailed insights into communication trends**. Future improvements can include **real-time analysis** and **more advanced NLP models** for better speaker attribution and emotion detection.
+- Open the notebook and run the cells sequentially.
+- This will:
+  - Extract audio from the video.
+  - Perform speech-to-text transcription.
+  - Identify speakers.
+  - Analyze sentiment.
+  - Apply named entity recognition.
 
----
+### 3. Run Visualization (updated-visualization.ipynb)
 
-## **7. Contributors & Acknowledgments**
-**Author:** Kinshuk Bhatia  
-**Project Goal:** Submission for Google Summer of Code (GSoC)  
+- Ensure transcriptions_with_ner_and_sentiment.csv is generated.
+- Open and execute updated-visualization.ipynb to generate graphs.
 
-For questions, please contact **[bhatiakinshuk29@gmail.com]**.
+## Visualization Outputs
 
+1. *Word Count Histogram per 5-Second Bucket*
+
+   - Type: Bar Plot
+   - X-Axis: Time Intervals (seconds)
+   - Y-Axis: Number of Words Spoken
+   - Insight: Identifies active and silent periods in the conversation.
+
+2. *Sentiment Distribution*
+
+   - Type: Bar Plot
+   - X-Axis: Sentiment Categories (Positive, Neutral, Negative)
+   - Y-Axis: Count of Segments
+   - Insight: Displays the overall sentiment balance in the interaction.
+
+3. *Word Count per Speaker*
+
+   - Type: Bar Plot
+   - X-Axis: Speaker Labels (e.g., Speaker 1, Speaker 2, etc.)
+   - Y-Axis: Number of Words Spoken by each speaker.
+   - Insight: Shows how much each speaker contributed.
+
+4. *Word Count Distribution*
+
+   - Type: Bar Plot
+   - X-Axis: Word count per segment
+   - Y-Axis: Frequency of transcription segments with the corresponding word count
+   - Insight: Dsistribution of word counts across all transcription segments, indicating the length of each segment.
+
+5. *Sentiment Trends Over Time*
+
+   - Type: Line Plot
+   - X-Axis: Time (seconds)
+   - Y-Axis: Average Sentiment Score
+   - Insight: Tracks emotional shifts throughout the conversation.
+
+6. *Word Cloud*
+   - Type: Word Cloud
+   - Insight: Highlights frequently used words for quick topic analysis.
+
+## Contribution Guidelines
+
+If you'd like to improve this tool, fork the repository and submit a pull request. Issues and suggestions are welcome.
+No instructions on how to run programs (particularly that file paths would need to be
+changed)
+Still worked, just missing that element from instructions
