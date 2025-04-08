@@ -1,0 +1,12 @@
+ffmpeg-python
+pandas
+nltk 
+seaborn 
+matplotlib 
+openai-whisper 
+pandas
+"pyannote.audio[all]"
+torch 
+torchvision 
+torchaudio
+librosa
