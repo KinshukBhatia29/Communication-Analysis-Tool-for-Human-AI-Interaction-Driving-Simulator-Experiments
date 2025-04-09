@@ -54,7 +54,7 @@ python
 input_video_path = "path/to/your/video/*.mp4"
 
 
-### 2. Execute updated-transcription.ipynb
+### 2. Execute transcription.ipynb
 
 - Open the notebook and run the cells sequentially.
 - This will:
@@ -63,6 +63,7 @@ input_video_path = "path/to/your/video/*.mp4"
   - Identify speakers.
   - Analyze sentiment.
   - Apply named entity recognition.
+  - This all will be done in a single call function.
 
 ### 3. Run Visualization (updated-visualization.ipynb)
 
