@@ -1,0 +1,99 @@
+start_time,end_time,bucket_start,bucket_end,text,sentiment,named_entities,word_count,speaker
+0.0,13.36,0,5," Okay, so the drive you're going to complete and use the E-cautomation and the object detection",positive,,16,Unknown
+13.36,17.4,10,15," system so that it will not be to operate the vehicle, so keep your hands off this steering",neutral,,18,SPEAKER_02
+17.4,19.88,15,20, wheel and meet off the pedals and punch me in that drive.,neutral,,12,SPEAKER_02
+19.88,20.88,15,20, Okay.,positive,,1,SPEAKER_02
+20.88,23.8,20,25," So when you see that some driver in the caterer highlight green, make sure you don't get",positive,,17,SPEAKER_02
+23.8,26.56,20,25, to break at any point during the drive.,neutral,,8,SPEAKER_02
+26.56,30.66,25,30," This dot, the car cab look out will have the ODS for getting visual feedback for targets",neutral,,17,SPEAKER_02
+30.66,31.66,30,35, that are in the environment.,neutral,,5,SPEAKER_02
+31.66,35.64,30,35," So the car cab look out should pay attention to that screen, take them and wind out",negative,,17,SPEAKER_02
+35.64,36.64,35,40, steering condition.,neutral,,2,SPEAKER_02
+36.64,43.64,35,40, Remember to tap the targets on that ODS as well as completing those workstation tasks.,positive,,15,Unknown
+43.64,48.64,40,45," All right, so all drivers, click your foot on the brake.",neutral,,11,Unknown
+48.64,53.48,45,50, Do not remove your foot from the brake until I instruct you to remove it.,neutral,,15,Unknown
+53.48,63.48,50,55, You can start the car.,neutral,,5,SPEAKER_02
+63.48,66.96,60,65, You drove through me.,neutral,,4,Unknown
+66.96,73.96,65,70, I'm going to drive.,neutral,,4,Unknown
+73.96,77.96,70,75, Car cab driver.,neutral,,3,Unknown
+77.96,78.96,75,80, Car cab driver.,neutral,,3,SPEAKER_02
+78.96,79.96,75,80, And only the car cab driver.,neutral,,6,SPEAKER_02
+79.96,80.96,75,80, Yes.,positive,,1,SPEAKER_02
+80.96,81.96,80,85, Right.,neutral,,1,SPEAKER_02
+81.96,84.96,80,85, Make sure everyone isn't drive.,positive,,5,SPEAKER_02
+84.96,86.96,80,85, I am now in drive.,neutral,,5,Unknown
+86.96,87.96,85,90, Car cab driver.,neutral,,3,SPEAKER_01
+87.96,88.96,85,90, And only the car cab driver.,neutral,,6,SPEAKER_02
+88.96,89.96,85,90, Maybe you can move forward.,neutral,,5,SPEAKER_02
+89.96,96.96,85,90, As I drove through.,neutral,,4,SPEAKER_02
+96.96,99.96,95,100, We now have some driver on.,neutral,,6,SPEAKER_02
+99.96,104.96,95,100, We're looking at the first on the scooter.,neutral,,8,SPEAKER_01
+104.96,105.96,100,105, What color skater?,neutral,,3,SPEAKER_03
+105.96,106.96,105,110, A crossbody bag.,neutral,,3,Unknown
+106.96,107.96,105,110, A scooter.,neutral,,2,Unknown
+107.96,114.96,105,110," Yeah, it has a crossbody bag.",positive,,6,Unknown
+114.96,121.96,110,115, I see scooters on both sides of the road.,neutral,,9,SPEAKER_03
+121.96,122.96,120,125, Not this one.,neutral,,3,Unknown
+122.96,123.96,120,125, Not motorcycles.,neutral,,2,Unknown
+123.96,124.96,120,125, Like an elected scooter.,positive,,4,Unknown
+124.96,129.96,120,125," Oh, yeah, that's on the other side of the road.",positive,,10,Unknown
+129.96,138.96,125,130," Yeah, I saw the passing now.",positive,,6,SPEAKER_01
+138.96,150.96,135,140, I'm going to drive.,neutral,,4,SPEAKER_01
+150.96,153.96,150,155, Do you have any target?,neutral,,5,Unknown
+153.96,154.96,150,155," No, yeah.",neutral,,2,SPEAKER_03
+154.96,156.96,150,155, I hit a good identify.,positive,,5,SPEAKER_03
+156.96,157.96,155,160," Yes, Paul.",positive,Paul,2,SPEAKER_03
+157.96,160.96,155,160, Okay.,positive,,1,Unknown
+160.96,167.96,160,165, Those motorcycles were giving me a car.,positive,,7,Unknown
+167.96,168.96,165,170, Yeah.,positive,,1,SPEAKER_01
+168.96,169.96,165,170, Pass R. I see it.,neutral,,5,SPEAKER_01
+169.96,170.96,165,170, It's at 10 o'clock.,neutral,,4,SPEAKER_01
+170.96,171.96,170,175, Okay.,positive,,1,Unknown
+171.96,173.96,170,175, I think we used.,neutral,,4,SPEAKER_03
+173.96,174.96,170,175, I'm going to pass that.,neutral,,5,SPEAKER_04
+174.96,175.96,170,175, Passing now.,neutral,,2,SPEAKER_04
+175.96,176.96,175,180, Yep.,positive,,1,SPEAKER_04
+176.96,177.96,175,180, Yeah.,positive,,1,SPEAKER_04
+177.96,178.96,175,180, We're also passing now.,neutral,,4,SPEAKER_01
+178.96,179.96,175,180, Car one.,neutral,,2,Unknown
+179.96,193.96,175,180, Why is a car three so far behind car two?,neutral,,10,Unknown
+193.96,194.96,190,195, Yeah.,positive,,1,Unknown
+194.96,195.96,190,195, Yeah.,positive,,1,SPEAKER_01
+195.96,211.96,195,200, It's hard to get.,negative,,4,Unknown
+211.96,213.96,210,215, Is the ODS working?,neutral,"O, ##DS",4,Unknown
+213.96,214.96,210,215, Yes.,positive,,1,Unknown
+214.96,217.96,210,215, Sometimes they have a green butt there.,neutral,,7,Unknown
+217.96,219.96,215,220, Is this identify?,neutral,,3,SPEAKER_03
+219.96,221.96,215,220," No, you won't see anything.",negative,,5,Unknown
+221.96,225.96,220,225, But that should see something in the passenger seat of the ODS is parking.,neutral,"O, ##DS",14,SPEAKER_00
+225.96,228.96,225,230, It should be a wide car right now.,neutral,,8,SPEAKER_04
+228.96,229.96,225,230, The white car.,neutral,,3,SPEAKER_04
+229.96,231.96,225,230, SUV like a team.,positive,,4,SPEAKER_04
+231.96,232.96,230,235, Yeah.,positive,,1,SPEAKER_04
+232.96,235.96,230,235, White stand or SUV.,neutral,,4,SPEAKER_04
+235.96,236.96,235,240," Yeah, SUV.",positive,SUV,2,SPEAKER_03
+236.96,243.96,235,240, I see a camel.,neutral,,4,SPEAKER_03
+243.96,250.96,240,245, We got cars coming up.,neutral,,5,Unknown
+250.96,257.96,250,255, There's a driving white car on the left.,neutral,,8,SPEAKER_01
+257.96,260.96,255,260, Passing now.,neutral,,2,SPEAKER_03
+260.96,263.96,260,265, I think that was it.,neutral,,5,SPEAKER_01
+263.96,267.96,260,265, We have another white SUV.,neutral,,5,SPEAKER_01
+267.96,279.96,265,270, Passing that one left now.,neutral,,5,SPEAKER_01
+279.96,288.96,275,280, Passing military checkpoint.,neutral,,3,Unknown
+288.96,291.96,285,290, There really was a truck.,neutral,,5,SPEAKER_04
+291.96,297.96,290,295, I know it was a tent on the truck.,neutral,,9,SPEAKER_04
+297.96,299.96,295,300, Yeah.,positive,,1,Unknown
+299.96,302.96,295,300, Yeah.,positive,,1,Unknown
+302.96,318.96,300,305," Jack, do you feel like this has given you enough to understand or do you want to continue?",positive,Jack,18,Unknown
+318.96,321.96,315,320," Yeah, I think is.",positive,,4,Unknown
+321.96,323.96,320,325," How about you, Commander?",neutral,,4,SPEAKER_04
+323.96,324.96,320,325, I think he's enough.,neutral,,4,SPEAKER_04
+324.96,329.96,320,325," I mean, I'm having fun, but we can stop if you want to.",negative,,13,SPEAKER_01
+329.96,332.96,325,330," Yeah, we can kill it.",negative,,5,Unknown
+332.96,338.96,330,335, All drivers will both be put your foot on the brake.,neutral,,11,SPEAKER_02
+338.96,347.96,335,340, Commander breaking out.,neutral,,3,SPEAKER_01
+347.96,349.96,345,350, Please don't run through it.,positive,,5,Unknown
+349.96,351.96,345,350, No.,negative,,1,SPEAKER_00
+351.96,353.96,350,355, We've been rear-ended.,neutral,,3,SPEAKER_01
+353.96,356.96,350,355, In park now.,neutral,,3,SPEAKER_01
+356.96,358.96,355,360," Good job, team.",positive,,3,SPEAKER_01
